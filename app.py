@@ -73,7 +73,7 @@ if uploaded_file is not None:
                 try:
                     image_base64 = encode_image(image)
                     result = query_ollama(image_base64, prompt)
-                    print(result)
+
                     if isinstance(result, dict):
                         st.subheader("Analysis Result:")
 
